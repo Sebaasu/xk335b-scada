@@ -6,6 +6,7 @@ Este proyecto contiene la integracion y el control de la planta de manufactura f
 
 ## 1. Estructura del Proyecto
 
+*   **DOCUMENTACION_GENERAL.md**: Manual de aprendizaje e integracion detallado. Recomendado para profundizar en la teoria de control (Redes de Petri), la metodologia Petri-to-Ladder, la comunicacion de red inter-PLC y la arquitectura multihilo del SCADA.
 *   **1_Transporte/ a 5_Seleccion/**: Contiene los programas de control para cada una de las 5 estaciones del proceso. Cada carpeta incluye:
     *   Proyecto ejecutable de Step 7-Micro/WIN (`.mwp`).
     *   Codigo exportado en texto plano (`.awl`) para lectura en cualquier sistema operativo.
