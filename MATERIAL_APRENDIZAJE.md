@@ -4,6 +4,21 @@ Este documento ha sido disenado como una guia de estudio y manual de ingenieria 
 
 ---
 
+## Modulo 0: Contexto General de la Planta Flexible XK-335B
+
+La planta de manufactura flexible XK-335B simula una linea automatizada de procesamiento de piezas compuesta por 5 estaciones de trabajo independientes coordinadas en red:
+
+1.  **Estacion 1 - Transporte (Coordinador Central - Carpeta [1_Transporte](file:///media/gabriel/ing/ETN1034/Laboratorio%20final/1_Transporte)):** Se encarga de trasladar fisicamente las piezas entre las demas estaciones usando un carro con servomotor lineal (controlado por pulsos PTO) y pinzas neumaticas.
+    *   *Posiciones del Servo (VD10 a VD22 en el PLC):* Alimentacion (8000), Procesamiento (50000), Ensamblaje (92000) y Seleccion (112000).
+2.  **Estacion 2 - Alimentacion (Carpeta [2_Alimentacion](file:///media/gabriel/ing/ETN1034/Laboratorio%20final/2_Alimentacion)):** Dosifica y distribuye las piezas de materia prima (cuerpos metalicos, mixtos o plasticos) hacia el sistema de transporte.
+3.  **Estacion 3 - Ensamblaje (Carpeta [3_Ensamblaje](file:///media/gabriel/ing/ETN1034/Laboratorio%20final/3_Ensamblaje)):** Procesa y monta las tapas superiores en los cuerpos de las piezas recibidas.
+4.  **Estacion 4 - Procesamiento (Carpeta [4_Procesamiento](file:///media/gabriel/ing/ETN1034/Laboratorio%20final/4_Procesamiento)):** Simula un proceso de taladrado y pulido de piezas mediante actuadores neumaticos y motores de corriente continua.
+5.  **Estacion 5 - Seleccion (Carpeta [5_Seleccion](file:///media/gabriel/ing/ETN1034/Laboratorio%20final/5_Seleccion)):** Clasifica el producto terminado en rampas distintas segun el material detectado por sus sensores (Metalica, Mixta o Plastica).
+
+*   *Para profundizar en el flujo secuencial de cada estacion, su hardware y sus variables fisicas, revisa los archivos `1_Comprension_Proceso.md` y `2_Mapeo_Hardware.md` dentro de la carpeta correspondiente a cada unidad.*
+
+---
+
 ## Modulo 1: Modelado de Sistemas Secuenciales con Redes de Petri
 
 ### 1.1 El Problema del Ladder Tradicional (Efecto Avalancha)
