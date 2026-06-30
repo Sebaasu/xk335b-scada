@@ -30,7 +30,7 @@ R      V7.0, 8
 Network 2 //  SEG: Salto a fin si emergencia activa
 LDN    I2.6
 JMP    0
-Network 3 // Comunicacion red PPI
+Network 3 // Comunicacion red PPI (PUERTO 1)
 LD     SM0.0
 CALL   SBR6, 1, M10.0, M10.1
 Network 4 //  MODULO 1: INICIALIZACION SM0.1 = 1 solo en el primer scan. Marcado inicial: P_Homing activo (M5.0). El brazo debe calibrarse antes de aceptar cualquier tarea. Coordenadas de estaciones cargadas en VD fijos.
@@ -53,7 +53,7 @@ R      V4.0, 8
 R      V5.0, 8
 R      V6.0, 8
 R      V7.0, 8
-Network 5 // Inicializar libreria de comunicacion modbus
+Network 5 // Inicializar libreria de comunicacion esclavo modbus (PUERTO 0)
 LD     SM0.1
 CALL   SBR7, 1, 2, 19200, 2, 0, 24, 0, 40, &VB0, M10.2, VB26
 Network 6 // Ejecucion de comunicacion modbus
@@ -526,7 +526,7 @@ Network 89 // debug para comunicaciones modbus
 // q1.1 se activa cuando no hay errores
 LD     M10.2
 =      Q1.1
-Network 90 
+Network 90 // debug para comunicaciones modbus
 // q1.2 se enciende cuando no hay errores
 LDB=   VB26, 0
 =      Q1.2

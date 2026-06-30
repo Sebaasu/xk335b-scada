@@ -2,6 +2,8 @@
 
 Este proyecto contiene la integracion y el control de la planta de manufactura flexible XK-335B, incluyendo los programas de control para 5 estaciones PLC S7-200 y un sistema SCADA HMI multiplataforma desarrollado en Flask y JavaScript para el monitoreo, control de consignas y gestion de seguridad.
 
+![Captura del sistema scada implementado en interfaz web](interfaz.png)
+
 ---
 
 ## 1. Estructura del Proyecto
