@@ -6,6 +6,15 @@ Este proyecto contiene la integracion y el control de la planta de manufactura f
 
 ---
 
+## Video Demostrativo
+Puedes ver una explicacion y demostracion en funcionamiento de la planta flexible y el sistema SCADA HMI en el siguiente enlace de YouTube:
+
+[![Video Demostrativo y Explicacion de la Planta XK-335B](https://img.youtube.com/vi/HKFOeb0qqmY/0.jpg)](https://youtu.be/HKFOeb0qqmY?si=4iA79sqimymysVCQ)
+
+*   [Ver Video Demostrativo en YouTube](https://youtu.be/HKFOeb0qqmY?si=4iA79sqimymysVCQ)
+
+---
+
 ## 1. Estructura del Proyecto
 
 *   **DOCUMENTACION_GENERAL.md**: Manual de aprendizaje e integracion detallado. Recomendado para profundizar en la teoria de control (Redes de Petri), la metodologia Petri-to-Ladder, la comunicacion de red inter-PLC y la arquitectura multihilo del SCADA.
